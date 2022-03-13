@@ -1,2 +1,1 @@
-# Syntax-Devine
-.
+mysql# DEVINE-SE-22
