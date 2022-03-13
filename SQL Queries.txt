@@ -1,0 +1,27 @@
+CREATE database Syntax;
+
+CREATE TABLE `Items` (
+  `ItemID` varchar(8) NOT NULL,
+  `Item_Name` varchar(45) NOT NULL,
+  `Availability` varchar(45) NOT NULL,
+  PRIMARY KEY (`ItemID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `users` (
+  `UserID` int NOT NULL,
+  `Name` varchar(45) NOT NULL,
+  `Contact_no` bigint NOT NULL,
+  `Password` varchar(45) NOT NULL,
+  `Privilege` varchar(45) NOT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `deal` (
+  `UserID` int NOT NULL,
+  `ItemID` varchar(45) NOT NULL,
+  `Price` int NOT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+INSERT INTO `Syntax`.`users` (`UserID`, `Name`, `Contact_no`, `Password`) VALUES ('1000', 'Devine', '23454623', 'password');
+
